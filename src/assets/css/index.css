@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-titulos: "Dancing Script", cursive;
+    --font-texto: "Poppins", sans-serif;
+
+    --rosa: #C94C4C;
+    --vermelho: #ff4144;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font: normal 1em var(--font-texto);
+    background-color: #f7c6c7;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-titulos);
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, var(--rosa), var(--vermelho));
+}
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_bar section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_bar button {
+    background-color: transparent;
+}
+
+.nav_bar ul {
+    width: 100%;
+    text-align: center;
+}
+
+.nav_item {
+    width: 100%;
+    padding: 6px;
+    list-style: none;
+    transition: all .5s ease-out;
+}
+
+.nav_item:hover {
+    transform: scale(0.9);
+}
+
+.nav_item a {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.show_menu {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.cabecalho > .logo {
+    display: none;
+}
+
+.nav_bar_desktop {
+    display: none;
+}
+
+.menu_desktop {
+    width: 100%;
+    display: none;
+}
+
+.corpo {
+    width: 100%;
+    min-width: 320px;
+    max-width: 950px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.brand-intro {
+    width: 100%;
+    padding: 15px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font-titulos);
+}
+
+.brand-intro h1 {
+    width: 50%;
+}
+
+.sobre_nos {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    background-image: url('../images/julie-blake-edison-Z3PvCoxsd3w-unsplash-2000w.jpg');
+}
+
+.sobrepor {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.produtos {
+    width: 100%;
+    padding: 15px;
+}
+
+.m_b {
+    margin-bottom: 10px;
+}
+
+.testemunhos {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+
+.card-testemunho {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-testemunho section {
+    width: 500px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--rosa);
+}
+
+.foto {
+    width: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.conteudo {
+    width: 87%;
+    text-align: justify;
+}
+
+.avaliacao {
+    color: rgb(240, 166, 6);
+}
+
+.contactos {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones_contactos {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icone_redes {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #000;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.icone_redes:hover {
+    transform: scale(1.1);
+}
+
+.fa-phone:hover {
+    color: #D1D5DA;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.creator:hover {
+    color: #833AB4;
+}
+
+.fa-tiktok:hover {
+    color: #69C9D0;
+}
+
+.fa-github:hover {
+    color: #D1D5DA;
+}
+
+.rodape {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    background-image: linear-gradient(to bottom, var(--vermelho), var(--rosa));
+}
+
+.criador {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .testemunhos {
+        height: auto;
+    }
+    
+    .card-testemunho section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card-testemunho section p {
+        text-align: center;
+    }
+    
+    .foto {
+        width: 100%;
+    }
+    
+    .conteudo {
+        width: 100%;
+    }
+
+    .avaliacao {
+        text-align: center;
+    }
+
+    .icones_contactos {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .brand-intro h1 {
+        font-size: 3em;
+    }
+
+    .testemunhos {
+        background-image: url('../images/undraw_testimonials_4c7y-250px.svg');
+        background-repeat: no-repeat;
+        background-position: 1% center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho > .logo {
+        display: inline-block;
+    }
+    
+    .nav_bar_desktop {
+        display: inline-block;
+    }
+
+    .menu_desktop {
+        display: block;
+    }
+
+    .nav_item {
+        width: 160px;
+        display: inline-block;
+    }
+
+    .nav_bar {
+        display: none;
+    }
+
+    .icones_contactos, .criador {
+        width: 20%;
+    }
+
+    .testemunhos {
+        height: 350px;
+        background-image: url('../images/undraw_testimonials_4c7y-350px.svg');
+        background-repeat: no-repeat;
+        background-position: 2% center;
+    }
+}

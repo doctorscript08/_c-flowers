@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    width: 350px;
+    height: 400px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    background-color: var(--vermelho);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn:hover button {
+    color: #fff;
+}
+
+.btn button {
+    background-color: transparent;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-prev::after {
+    content: '\f104';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+}
+
+.swiper-button-next::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+}

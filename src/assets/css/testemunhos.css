@@ -1,0 +1,72 @@
+#testemunhos {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.testemunhos-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards-testemunhos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+    transition: box-shadow .5s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .5);
+}
+
+.textos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detalhes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star {
+    color: rgb(255, 196, 0);
+}
+
+@media screen and (max-width: 1114px) {
+    .img-testemunhos {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .detalhes {
+        flex-direction: column;
+    }
+}

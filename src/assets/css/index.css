@@ -39,7 +39,6 @@ a {
     justify-content: center;
     align-items: center;
     align-items: center;
-    position: fixed;
     z-index: 4;
     background-image: linear-gradient(to bottom, var(--rosa), var(--vermelho));
 }
